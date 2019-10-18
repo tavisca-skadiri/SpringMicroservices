@@ -1,4 +1,4 @@
-package com.tavisca.gce.RequestHandlerApi;
+package com.tavisca.gce.DBValidatorApi;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

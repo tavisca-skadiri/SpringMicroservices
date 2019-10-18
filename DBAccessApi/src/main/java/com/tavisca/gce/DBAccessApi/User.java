@@ -1,7 +1,6 @@
 package com.tavisca.gce.DBAccessApi;
 
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -11,30 +10,26 @@ import java.sql.Date;
 @Table(name = "user")
 public class User {
     @Id
-    @Column(name = "id")
     private int id;
-    @Column(name = "name")
     private String name;
-    @Column(name = "createdBy")
     private String createdBy;
-    @Column(name = "password")
     private String password;
-    @Column(name = "dob")
     private Date dob;
-    @Column(name = "doj")
     private Date doj;
-    @Column
     private String role;
-//
-//    private Date createdDate;
-//
-//    public Date getCreatedDate() {
-//        return createdDate;
-//    }
-//
-//    public void setCreatedDate(Date createdDate) {
-//        this.createdDate = createdDate;
-//    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", createdBy='" + createdBy + '\'' +
+                ", password='" + password + '\'' +
+                ", dob=" + dob +
+                ", doj=" + doj +
+                ", role='" + role + '\'' +
+                '}';
+    }
 
     public String getRole() {
         return role;

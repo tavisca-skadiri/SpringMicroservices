@@ -7,9 +7,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.Date;
 import java.util.List;
 
-@ControllerAdvice
 @RestController
-public class ErrorController extends ResponseEntityExceptionHandler {
+public class ErrorController {
 
     @Autowired
     ExceptionLoggerRepository repo;

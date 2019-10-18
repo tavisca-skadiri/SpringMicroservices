@@ -1,7 +1,10 @@
 package com.tavisca.gce.ErrorHandlerApi;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Date;
 
+@Document
 public class ExceptionResponse {
     private Date timestamp;
     private String message;

@@ -14,12 +14,16 @@ import java.net.URI;
 @RestController
 public class ValidateController {
     @Autowired
-    private UserRepository repo;
+    private ValidateService validateService;
 
     @PostMapping("/validate")
     public ResponseEntity addUser(@RequestBody User userData) {
-
-        return ResponseEntity.status(HttpStatus.OK).body(repo.save(userData));
+        if(validateService.isValid(userData)){
+            final URI uri = URI.create("http://localhost:7070/user");
+            RestTemplate restTemplate = new RestTemplate();
+            return restTemplate.postForEntity(uri, userData, String.class);
+        }
+        throw new RuntimeException("User details invalid");
     }
 
     @GetMapping("/error")

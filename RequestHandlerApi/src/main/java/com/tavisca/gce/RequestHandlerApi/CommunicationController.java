@@ -17,9 +17,9 @@ public class CommunicationController {
         final String uri = "http://localhost:8080/validate";
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<User> responseEntity = restTemplate.postForEntity(uri, userData, User.class);
-        //if (responseEntity.getStatusCode().isError())
-            throw new RuntimeException();
-        //return ResponseEntity.status(HttpStatus.OK).body("User added successfully");
+        if (responseEntity.getStatusCode().isError())
+            return ResponseEntity.status(HttpStatus.OK).body("Invalid request");
+        return ResponseEntity.status(HttpStatus.OK).body("Request sent successully");
     }
 
     @GetMapping("/error")

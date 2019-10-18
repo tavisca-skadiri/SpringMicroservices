@@ -25,5 +25,4 @@ public class ErrorController extends ResponseEntityExceptionHandler {
     public List<ExceptionResponse> getExceptions() {
         return repo.findAll();
     }
-
 }

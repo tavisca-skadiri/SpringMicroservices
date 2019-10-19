@@ -1,4 +1,4 @@
-package com.tavisca.gce.DBAccessApi;
+package com.tavisca.gce.DBAccessApi.model;
 
 
 import javax.persistence.Entity;

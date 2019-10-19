@@ -1,5 +1,6 @@
-package com.tavisca.gce.DBAccessApi;
+package com.tavisca.gce.DBAccessApi.repository;
 
+import com.tavisca.gce.DBAccessApi.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

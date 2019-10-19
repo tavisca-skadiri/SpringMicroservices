@@ -1,4 +1,4 @@
-package com.tavisca.gce.RequestHandlerApi;
+package com.tavisca.gce.RequestHandlerApi.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

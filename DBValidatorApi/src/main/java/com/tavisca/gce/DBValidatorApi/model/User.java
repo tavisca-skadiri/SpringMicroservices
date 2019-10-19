@@ -1,4 +1,4 @@
-package com.tavisca.gce.DBValidatorApi;
+package com.tavisca.gce.DBValidatorApi.model;
 
 import java.sql.Date;
 

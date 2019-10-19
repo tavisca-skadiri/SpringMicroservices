@@ -1,4 +1,4 @@
-package com.tavisca.gce.DBAccessApi;
+package com.tavisca.gce.DBValidatorApi.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

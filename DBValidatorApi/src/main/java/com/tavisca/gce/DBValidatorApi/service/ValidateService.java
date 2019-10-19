@@ -1,12 +1,13 @@
-package com.tavisca.gce.DBValidatorApi;
+package com.tavisca.gce.DBValidatorApi.service;
 
+import com.tavisca.gce.DBValidatorApi.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.regex.Pattern;
 
 @Service
 public class ValidateService {
-    boolean isValid(User user) {
+    public boolean isValid(User user) {
         return isPasswordValid(user);
     }
 
